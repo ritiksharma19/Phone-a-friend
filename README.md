@@ -150,30 +150,11 @@ Plus: changes to tenancy terms require written notice at least 90 days before co
 /docs           Architecture diagram, guardrail table
 ```
 
-## 8. Running locally
-
-```bash
-# 1. Tool gateway + mocks
-cd gateway
-pip install -r requirements.txt
-uvicorn main:app --port 8000
-
-# 2. Expose to ElevenLabs
-ngrok http 8000   # paste the URL into the agent's server tool config
-
-# 3. Rule engine tests
-cd ../rule_engine && pytest
-```
 
 Environment variables: `ELEVENLABS_API_KEY`, `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `GATEWAY_BASE_URL`.
 
-## 9. Evaluation
 
-- Rule engine: unit tests on every band boundary (10/11%, 20/21% …) and notice-period edge cases.
-- Agent Testing: 20+ scenarios × multiple runs, reporting pass rate; tool-call tests confirm the filing tool is only invoked after explicit confirmation.
-- Simulated conversations in English and Arabic, including one escalation path.
-- Post-call analysis criteria: disclosure given, source cited, no advice given, correct verdict.
 
-## 10. Team
+## 8. Team
 
 **Phone-a-Friend** — ritikrampramp@gmail.com, meenal.learning@gmail.com.
