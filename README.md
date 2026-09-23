@@ -1,4 +1,3 @@
-# Phone-a-friend
 # Rent Rights Line — Phone-a-Friend
 
 A multilingual voice agent that tells Dubai tenants and landlords whether a proposed **residential rent increase** is permitted under published rules, and prepares a Rental Dispute Centre (RDC) filing for human review when the caller wants to proceed.
@@ -177,4 +176,4 @@ Environment variables: `ELEVENLABS_API_KEY`, `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_
 
 ## 10. Team
 
-**Phone-a-Friend** — see Idea Canvas box P.
+**Phone-a-Friend** — ritikrampramp@gmail.com, meenal.learning@gmail.com.
